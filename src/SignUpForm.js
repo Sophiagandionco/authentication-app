@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SignUpForm.css'; // Import CSS file for custom styling
+import './SignUpForm.css'; 
 
 const SignUpForm = () => {
   const [firstName, setFirstName] = useState('');
@@ -17,7 +17,6 @@ const SignUpForm = () => {
   };
 
   const validatePasswordStrength = (password) => {
-    // Password strength criteria: At least 8 characters including at least one uppercase letter, one lowercase letter, one number, and one special character.
     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     return regex.test(password);
   };
@@ -60,9 +59,9 @@ const SignUpForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Validation checks for firstName, lastName, email, password, and confirmPassword can be added here
+    
 
-    // Perform further actions (e.g., submit form) if all validations pass
+    
   };
 
   return (
